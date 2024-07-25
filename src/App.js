@@ -12,7 +12,7 @@ const App = () => {
   };
 
   return (
-    <Router>
+    <Router basename="/ecommerce">
       <Header cartItemCount={cartItems.length} />
       <Routes>
         <Route path="/" element={<ProductList addToCart={addToCart} />} />
