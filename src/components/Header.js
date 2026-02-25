@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";
 
 const Header = ({ cartItemCount }) => {
   return (
     <header className="main-header">
       <div className="header-container">
         
-        {/* Logo Section */}
+        {/* Logo */}
         <div className="logo">
           <Link to="/">
             <span className="logo-icon">🛍</span>
@@ -32,7 +31,7 @@ const Header = ({ cartItemCount }) => {
           />
 
           <Link to="/cart" className="cart-icon">
-            <FaShoppingCart size={20} />
+            🛒
             {cartItemCount > 0 && (
               <span className="cart-count">{cartItemCount}</span>
             )}
